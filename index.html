@@ -1,1 +1,329 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Patidar | Python Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9', // Sky blue
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-bold text-xl text-brand-900">Shyam<span class="text-brand-500">.Dev</span></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-brand-500 transition">About</a>
+                    <a href="#skills" class="text-slate-600 hover:text-brand-500 transition">Expertise</a>
+                    <a href="#projects" class="text-slate-600 hover:text-brand-500 transition">Projects</a>
+                    <a href="#contact" class="px-4 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-slate-50 to-brand-50">
+        <div class="max-w-4xl mx-auto px-4 text-center reveal">
+            <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-600 text-sm font-semibold mb-6">
+                Available for Internship & Entry-Level Roles
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                Building Logic. <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-indigo-600">Creating Experiences.</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                I am a Python Developer specializing in Django and modern Web Technologies. I transform complex problems into clean, scalable, and user-friendly web solutions.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-8 py-4 bg-brand-600 text-white font-semibold rounded-xl hover:bg-brand-700 shadow-lg shadow-brand-500/30 transition transform hover:-translate-y-1">
+                    View My Work
+                </a>
+                <a href="#contact" class="px-8 py-4 bg-white text-slate-700 font-semibold rounded-xl border border-slate-200 hover:border-brand-500 hover:text-brand-500 transition">
+                    Contact Me
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center gap-8 text-slate-400">
+                <i class="fab fa-python text-4xl hover:text-brand-600 transition"></i>
+                <i class="fab fa-js text-4xl hover:text-yellow-400 transition"></i>
+                <i class="fab fa-react text-4xl hover:text-blue-400 transition"></i>
+                <i class="fas fa-database text-4xl hover:text-slate-600 transition"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">About Me</h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        My journey into code began with a fascination for how logic can solve real-world problems. Currently pursuing my <strong>Master of Computer Applications (MCA)</strong>, I have transitioned from learning syntax to architecting full-stack solutions.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        I specialize in the <strong>Python ecosystem</strong>, utilizing Django for robust backends and JavaScript frameworks for interactive frontends. Unlike a typical fresher, I focus on "building to learn," evidenced by my work integrating AI/ML libraries like MediaPipe into web apps.
+                    </p>
+                    <p class="text-slate-600 font-semibold">
+                        I am eager to bring my understanding of Data Structures, OOPs, and Web Architecture to a collaborative team where I can contribute immediately while continuing to grow.
+                    </p>
+                    <div class="mt-8 flex gap-4">
+                        <a href="https://www.linkedin.com/in/shyam-patidar-dev/" target="_blank" class="text-brand-600 font-semibold hover:underline">
+                            <i class="fab fa-linkedin mr-2"></i>LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-slate-100 rounded-2xl p-8 reveal delay-200 border border-slate-200">
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">MCA (Pursuing)</h4>
+                                <p class="text-sm text-slate-500">Jawaharlal Institute of Technology</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">BSc Computer Science</h4>
+                                <p class="text-sm text-slate-500">ISBA Institute (CGPA 7.57)</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xl">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Certified Developer</h4>
+                                <p class="text-sm text-slate-500">Full Stack (Apna College) & Java (Knowledge Gate)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Technical Expertise</h2>
+                <p class="text-slate-600">A solid foundation in computer science principles coupled with modern application development skills.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition reveal border-t-4 border-brand-500">
+                    <div class="w-14 h-14 bg-brand-50 rounded-lg flex items-center justify-center text-brand-600 text-2xl mb-6">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Backend Development</h3>
+                    <p class="text-slate-600 text-sm mb-4">Building secure, scalable server-side logic and RESTful APIs.</p>
+                    <ul class="text-slate-500 text-sm space-y-2">
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>Python & Java</li>
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>Django Framework</li>
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>MySQL & SQLite3</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition reveal delay-100 border-t-4 border-yellow-400">
+                    <div class="w-14 h-14 bg-yellow-50 rounded-lg flex items-center justify-center text-yellow-600 text-2xl mb-6">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Frontend Architecture</h3>
+                    <p class="text-slate-600 text-sm mb-4">Creating responsive, interactive interfaces with modern UI standards.</p>
+                    <ul class="text-slate-500 text-sm space-y-2">
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i>ReactJS</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i>JavaScript (ES6+)</li>
+                        <li><i class="fas fa-check text-yellow-500 mr-2"></i>Tailwind CSS / HTML5</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition reveal delay-200 border-t-4 border-purple-500">
+                    <div class="w-14 h-14 bg-purple-50 rounded-lg flex items-center justify-center text-purple-600 text-2xl mb-6">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">CS Fundamentals</h3>
+                    <p class="text-slate-600 text-sm mb-4">Writing efficient code optimized for performance and maintainability.</p>
+                    <ul class="text-slate-500 text-sm space-y-2">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Data Structures</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Algorithms</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>OOP Concepts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center reveal">Featured Projects</h2>
+            
+            <div class="space-y-12">
+                <div class="grid md:grid-cols-12 gap-8 items-start reveal">
+                    <div class="md:col-span-4 bg-slate-100 rounded-xl p-8 h-full flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Yoga Sathi</h3>
+                        <p class="text-brand-600 font-semibold mb-4">AI-Powered Health Tech</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">Django</span>
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">MediaPipe</span>
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">JS</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8">
+                        <div class="bg-white border border-slate-100 rounded-xl p-6 shadow-sm">
+                            <ul class="space-y-4 text-slate-600">
+                                <li><strong>Situation:</strong> Users practicing yoga at home often lack feedback on their posture, leading to ineffective practice or injury.</li>
+                                <li><strong>Task:</strong> Develop a web application capable of real-time posture analysis without requiring expensive hardware.</li>
+                                <li><strong>Action:</strong> Engineered a full-stack Django application integrating MediaPipe Pose with JavaScript. Implemented a secure authentication system for user session tracking.</li>
+                                <li><strong>Result:</strong> Created a functional prototype that delivers live posture feedback and tracks session quality, effectively merging health-tech with web development.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-8 items-start reveal">
+                    <div class="md:col-span-4 bg-slate-100 rounded-xl p-8 h-full flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">E-Book Web App</h3>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">Django MVT</span>
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">SQLite3</span>
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">CRUD</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8">
+                        <div class="bg-white border border-slate-100 rounded-xl p-6 shadow-sm">
+                            <ul class="space-y-4 text-slate-600">
+                                <li><strong>Situation:</strong> Need for a centralized platform to manage and access digital resources efficiently.</li>
+                                <li><strong>Task:</strong> Build a scalable application with separate interfaces for administrators and general users.</li>
+                                <li><strong>Action:</strong> Developed the app using Django’s MVT architecture. Integrated robust CRUD operations, form validations, and an admin dashboard for backend control.</li>
+                                <li><strong>Result:</strong> Delivered a secure platform with streamlined data handling, allowing for efficient book management and seamless user sessions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-8 items-start reveal">
+                    <div class="md:col-span-4 bg-slate-100 rounded-xl p-8 h-full flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Simon Says Game</h3>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">DOM Manipulation</span>
+                            <span class="text-xs bg-white border border-slate-200 px-2 py-1 rounded">CSS Animations</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-8">
+                        <div class="bg-white border border-slate-100 rounded-xl p-6 shadow-sm">
+                            <ul class="space-y-4 text-slate-600">
+                                <li><strong>Situation:</strong> To demonstrate mastery of frontend logic and user interface interactivity.</li>
+                                <li><strong>Task:</strong> Create an engaging, browser-based memory game.</li>
+                                <li><strong>Action:</strong> Built complex game logic using vanilla JavaScript for real-time feedback and utilized CSS media queries for a responsive design.</li>
+                                <li><strong>Result:</strong> Achieved a seamless user experience with intuitive typography and colorful UI that works perfectly across all device sizes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center reveal">
+            <h2 class="text-3xl font-bold mb-6">Let's Build Something Great</h2>
+            <p class="text-slate-300 mb-10 text-lg">
+                I am currently seeking opportunities to apply my skills in a professional setting. Whether you have a vacancy for a Python Developer or an internship opportunity, I'd love to connect.
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center gap-8 mb-12">
+                <a href="mailto:patidar.shyam0508@gmail.com" class="flex items-center justify-center gap-3 text-white hover:text-brand-400 transition">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400">Email Me</p>
+                        <p class="font-semibold">patidar.shyam0508@gmail.com</p>
+                    </div>
+                </a>
+                
+                <a href="tel:+919111085202" class="flex items-center justify-center gap-3 text-white hover:text-brand-400 transition">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400">Call Me</p>
+                        <p class="font-semibold">+91 91110-85202</p>
+                    </div>
+                </a>
+
+                <div class="flex items-center justify-center gap-3 text-white">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400">Location</p>
+                        <p class="font-semibold">Khargone, MP, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="border-t border-white/10 pt-8">
+                <p class="text-slate-500 text-sm">© 2024 Shyam Patidar. All rights reserved.</p>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
+    </script>
+</body>
+</html>
