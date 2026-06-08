@@ -1,0 +1,178 @@
+        :root {
+  --bg-color: #f8f9fa; /* Light and clean background */
+  --text-color: #212529;
+  --secondary-text-color: #6c757d;
+  --accent-color: #ff4500; /* Energetic Orange-Red */
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  --border-radius: 12px;
+}
+#images{
+    border-radius: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+section {
+  padding: 5rem 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 4rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Hero Section --- */
+#hero {
+  text-align: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+.hero-content .highlight {
+  color: var(--accent-color);
+}
+.hero-content p {
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  margin: 1.5rem 0 2.5rem;
+}
+.btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 69, 0, 0.3);
+}
+
+/* --- Fun Cards & Grid --- */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.fun-card {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+.fun-card:hover {
+  transform: translateY(-10px) rotate(2deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.fun-card h3 {
+  color: var(--accent-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.fun-card p {
+  color: var(--secondary-text-color);
+}
+
+/* --- Awards Section --- */
+.award-card {
+  text-align: center;
+}
+.award-card i {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+.award-card h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+.award-card p {
+  font-weight: 700;
+}
+
+/* --- Gallery Section --- */
+#evidence {
+  background-color: #fff;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05) rotate(-3deg);
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 4rem 0 3rem;
+}
+.heart {
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+#fun4{
+  height: 100%;
+  width: 100%;
+}
